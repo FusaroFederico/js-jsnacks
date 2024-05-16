@@ -11,7 +11,8 @@ for (let i = 0; i < listaInvitati.length; i++) {
     let nomeLista = listaInvitati[i];
     if (nomeLista === nomeUtente) {
         console.log('puoi entrare');
-    } else if (i === listaInvitati.length) {
+        break;
+    } else if (i === (listaInvitati.length - 1)) {
         console.log('mi dispiace il tuo nome non è sulla lista. Non puoi entare');
     }
 }
