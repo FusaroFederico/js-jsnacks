@@ -8,8 +8,11 @@ massimo consentito, e stampare tutta la tabellina del 2 fino al numero inserito.
 // inizializzo un array vuoto
 const tabellina = [];
 
-// ciclo for che genera la tabellina del 2 fino a 1000
-for (let i = 0; i <= 1000; i += 2) {
+// numero massimo inserito dall'utente
+const numMax = Number(prompt('inserisci il numero massimo consentito'));
+
+// ciclo for che genera la tabellina del 2 fino a numMax
+for (let i = 0; i <= numMax; i += 2) {
     // appende i a tabellina
     tabellina.push(i);
 }
